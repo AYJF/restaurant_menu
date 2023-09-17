@@ -1,9 +1,9 @@
-class Appetizer {
+class Item {
   final String title;
   final String subtitle;
   final double price;
 
-  Appetizer({
+  Item({
     required this.title,
     required this.subtitle,
     required this.price,

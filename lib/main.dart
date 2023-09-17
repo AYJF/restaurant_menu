@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:restaurant_menu/home/home.dart';
+import 'package:restaurant_menu/views/cold/cold.dart';
+import 'package:restaurant_menu/views/entrees/entrees.dart';
+import 'package:restaurant_menu/views/home/home.dart';
+import 'package:restaurant_menu/views/soups/soups.dart';
+import 'package:restaurant_menu/views/tacos/tacos.dart';
 import 'package:restaurant_menu/welcome_screen.dart';
 
 void main() {
@@ -22,6 +26,10 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (_) => const LoadingScreen(),
         '/dashboard': (_) => const Home(),
+        '/entrees': (_) => const Entrees(),
+        '/cold': (_) => const Cold(),
+        '/soup': (_) => const Soups(),
+        '/tacos': (_) => const Tacos(),
       },
     );
   }

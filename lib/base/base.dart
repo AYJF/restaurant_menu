@@ -5,9 +5,11 @@ class Base extends StatelessWidget {
   const Base({
     Key? key,
     required this.body,
+    required this.onPressed,
   }) : super(key: key);
 
   final Widget body;
+  final VoidCallback? onPressed;
 
   @override
   Widget build(BuildContext context) {
@@ -46,7 +48,7 @@ class Base extends StatelessWidget {
                     ),
                     FloatingActionButton(
                         backgroundColor: HexColor('#E98400'),
-                        onPressed: () {},
+                        onPressed: onPressed,
                         child: const Icon(
                           Icons.arrow_forward_ios,
                           color: Colors.white,
